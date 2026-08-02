@@ -52,3 +52,10 @@ main {
     margin: 40px auto;
     padding: 0 20px;
 }
+
+/* Flexbox Card Grid */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
