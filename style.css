@@ -94,3 +94,17 @@ article p {
 }
 
 /* 8. Aura Gradient Button Links */
+article a {
+    display: inline-block;
+    align-self: flex-start;
+    background: var(--gradient-accent);
+    color:#ffffff;
+    padding: 12px, 24px;
+    border-radius: 50px; /* Rounded pill shape */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.92rem;
+    letter-spacing: 0.01em;
+    box-shadow: 0 6px 18px rgba(255, 126, 158, 0.25s);
+    transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
