@@ -9,9 +9,9 @@
     --text-muted: #6b617b;
     --heading-color: #1e1b2e;
     --gradient-accent: linear-gradient(135deg, #ff7e9e 0%, #a78bfa 100%);
-    --gradient-hover: linear-gradient(135deg, #f43f5e 0% #8b5cf6 100%);
+    --gradient-hover: linear-gradient(135deg, #f43f5e 0%, #8b5cf6 100%);
     --card-shadow: 0 10px 30px rgba(180, 150, 200, 0.12);
-    --hover-sahdow: 0 16px 36px rgba(167, 139, 250, 0.22);
+    --hover-shadow: 0 16px 36px rgba(167, 139, 250, 0.22);
 
 }
 
@@ -75,7 +75,7 @@ article {
 }
 
 article:hover {
-    transform: translate(-5px);
+    transform: translateY(-5px);
     box-shadow: var(--hover-shadow);
 }
 
@@ -99,13 +99,13 @@ article a {
     align-self: flex-start;
     background: var(--gradient-accent);
     color:#ffffff;
-    padding: 12px, 24px;
+    padding: 12px 24px;
     border-radius: 50px; /* Rounded pill shape */
     text-decoration: none;
     font-weight: 600;
     font-size: 0.92rem;
     letter-spacing: 0.01em;
-    box-shadow: 0 6px 18px rgba(255, 126, 158, 0.25s);
+    box-shadow: 0 6px 18px rgba(255, 126, 158, 0.25);
     transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
