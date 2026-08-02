@@ -1,19 +1,32 @@
+/*1. Google Fonts Import (Sora for headings, Plus Jakarta Sans for body) */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Sora:wght@600;700&display=swap');
+
+/*2. Color Palette & Style Variables */
+:root {
+    --bg-color: #faf7fc;
+    --card-bg: #ffffff;
+    --text-color: #2d233e;
+    --text-muted: #6b617b;
+    --heading-color: #1e1b2e;
+    --gradient-accent: linear-gradient(135deg, #ff7e9e 0%, #a78bfa 100%);
+    --gradient-hover: linear-gradient(135deg, #f43f5e 0% #8b5cf6 100%);
+    --card-shadow: 0 10px 30px rgba(180, 150, 200, 0.12);
+    --hover-sahdow: 0 16px 36px rgba(167, 139, 250, 0.22);
+
+}
+
+/* 3. Global Reset & Body */
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #f8f9fa;
-    font-family: sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Plus Jakarta Sants', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-#UniqueHeader {
-    background-color: cadetblue;
-    color: whitesmoke;
-    padding: 40px;
-    text-align: center;
-}
-
-.city {
-    background-color: orange;
-    color: black;
-    border: 2px solid black;
-    margin: 20px;
-    padding: 20px;
-}
+header h1 {}
