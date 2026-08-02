@@ -108,3 +108,10 @@ article a {
     box-shadow: 0 6px 18px rgba(255, 126, 158, 0.25s);
     transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+article a:hover {
+    background: var(--gradient-hover)
+    transform: translateY(-2px);
+    bpx-shadow: 0 8px 22px rgba(136, 92, 246, 0.35);
+}
+
