@@ -53,9 +53,23 @@ main {
     padding: 0 20px;
 }
 
-/* Flexbox Card Grid */
+/* 6. Flexbox Card Grid */
 section {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+}
+
+/* 7. Individual Project Cards */
+article {
+    flex: 1 1 400px; /* Minimum width 400px before wrapping */
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: var(--card-shadow);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
