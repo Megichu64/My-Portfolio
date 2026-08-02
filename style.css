@@ -73,3 +73,17 @@ article {
     justify-content: space-between;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
+article:hover {
+    transform: translate(-5px);
+    box-shadow: var(--hover-shadow);
+}
+
+article h2 {
+    font-family: 'Sora', sans-serif;
+    color: var(--heading-color);
+    margin-top: 0;
+    font-size: 1.35rem;
+    letter-spacing: -0.01rem;
+}
+
