@@ -15,13 +15,25 @@
 
 }
 
-/* 3. System Dark Mode Overrides (Placed Below) */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #120f1a;
-    --card-bg: #1e1b2e;
-    --text-color: #f3f0f7;
+/* 1. Default / Light Theme */
+  :root,
+  [data-theme="light"] {
+    --bg-color: #faf7fc;
+    --card-bg: #ffffff;
+    --text-color: #2d233e;
+    --text-muted: #6b617b;
+    --card-shadow: 0 10px 30px rgba(180, 150, 200, 0.12);
   }
+
+/* 2. System Dark Mode (applies automatically unless light mode is selected) */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --bg-color: #120f1a;
+        --card-bg: #1e1b2e;
+        --text-color: #f3f0f7;
+        --text-muted: #a39bb0;
+        --card-shadow: 0 10px 30 px rgba(0, 0, 0, 0.5);
+    }
 }
 
 /*4. Dark Theme */

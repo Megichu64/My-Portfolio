@@ -6,8 +6,12 @@ toggleBtn.addEventListener('click', () => {
   
   // Switch between dark and light
   if (currentTheme === 'dark') {
-    document.documentElement.removeAttribute('data-theme');
+    // Switch to Light Mode
+    document.documentElement.setAttribute('data-theme', 'light');
+    toggleBtn.textContent = '🌙 Dark Mode';
   } else {
+    // Switch to Dark Mode
     document.documentElement.setAttribute('data-theme', 'dark');
+    toggleBtn.textContent = '☀️ Light Mode';
   }
 });
