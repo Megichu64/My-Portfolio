@@ -15,6 +15,11 @@
 
 }
 
+/*3. Dark Theme */
+[data-theme="dark"] {
+
+}
+
 /* 3. Global Reset & Body */
 * {
     box-sizing: border-box;
