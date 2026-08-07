@@ -15,12 +15,25 @@
 
 }
 
-/*3. Dark Theme */
-[data-theme="dark"] {
-
+/* 3. System Dark Mode Overrides (Placed Below) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #120f1a;
+    --card-bg: #1e1b2e;
+    --text-color: #f3f0f7;
+  }
 }
 
-/* 3. Global Reset & Body */
+/*4. Dark Theme */
+[data-theme="dark"] {
+    --bg-color: #120f1a;
+    --card-bg: #1e1b2e;
+    --text-color: #f3f0f7;
+    --text-muted: #a39bb0;
+    --card-shadow: 0 10px 30px rgba (0, 0, 0, 0.5);
+}
+
+/* 5. Global Reset & Body */
 * {
     box-sizing: border-box;
 }
@@ -32,9 +45,10 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* 4. Header Banner with Gradient Background */
+/* 6. Header Banner with Gradient Background */
 header {
     background: var(--gradient-accent);
     color: #ffffff;
@@ -51,21 +65,21 @@ header h1 {
     letter-spacing: -0.02em;
 }
 
-/* 5. Main Layout Container */
+/* 7. Main Layout Container */
 main {
     max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
-/* 6. Flexbox Card Grid */
+/* 8. Flexbox Card Grid */
 section {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
 }
 
-/* 7. Individual Project Cards */
+/* 9. Individual Project Cards */
 article {
     flex: 1 1 400px; /* Minimum width 400px before wrapping */
     background-color: var(--card-bg);
