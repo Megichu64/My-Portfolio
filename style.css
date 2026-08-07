@@ -32,7 +32,8 @@
         --card-bg: #1e1b2e;
         --text-color: #f3f0f7;
         --text-muted: #a39bb0;
-        --card-shadow: 0 10px 30 px rgba(0, 0, 0, 0.5);
+        --heading-color: #ffffff;
+        --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     }
 }
 
@@ -42,7 +43,8 @@
     --card-bg: #1e1b2e;
     --text-color: #f3f0f7;
     --text-muted: #a39bb0;
-    --card-shadow: 0 10px 30px rgba (0, 0, 0, 0.5);
+    --heading-color: #ffffff;
+    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 /* 5. Global Reset & Body */
